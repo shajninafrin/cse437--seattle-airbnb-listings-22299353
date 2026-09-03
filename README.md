@@ -1,10 +1,9 @@
 # CSE437 Final Project: Seattle Airbnb Price Prediction
 
 ## Executive Summary
-This project predicts Seattle Airbnb nightly prices and examines which available listing
-characteristics are associated with price. The target is `log_price`, calculated as `log1p`
-of the cleaned, 1st-to-99th-percentile capped price. Two model families are compared: tuned
-Ridge regression and tuned Random Forest regression.
+This project predicts Seattle Airbnb listing files to predict nightly prices and examines which available listing
+characteristics are associated with price. After cleaing the data and capping extreme prices, I predicted "Log_price" using two models: Ridge regression and Random Forest regression. The target is `log_price`, calculated as `log1p`. Random Forest performed better on the held-out test data, with a dollar RMSE of $58.71 and MAE of $35.48. Compared with predicting the median price for every listing, it reduced RMSE by approximately 30%.
+
 
 The tuned Random Forest performs best on the held-out test set. It achieves dollar RMSE of
 `$58.71`, dollar MAE of `$35.48`, and log-space $R^2$ of `0.525`. The median-price baseline has
@@ -119,8 +118,7 @@ The available listing and review features provide useful predictive signal: the 
 Forest improves substantially over a median baseline and explains about 52.5% of test-set
 variation in log price. Accuracy remains imperfect, particularly for expensive entire-home
 listings. The strongest limitation is the legacy schema, which excludes several variables
-specified in the original research questions. The findings should therefore be understood as
-valid for this supplied Seattle export and feature set.
+specified in the original research questions. The conclusionsapplied to this particular Seattle dataset and only the variables available in it.
 
 ## Team
 | Name | Student ID | Contribution |
