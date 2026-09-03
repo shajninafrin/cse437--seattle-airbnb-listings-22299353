@@ -125,7 +125,7 @@ valid for this supplied Seattle export and feature set.
 ## Team
 | Name | Student ID | Contribution |
 |---|---|---|
-| _fill in_ | _fill in_ | _fill in_ |
+| Shajnin Afrin Esha | 22299353 | Complete project |
 
 ## AI Assistance Declaration
 Claude (Anthropic) was used to help scaffold notebook structure/boilerplate code and the
