@@ -1,0 +1,3 @@
+model,method,search_space,n_fits,best_params,best_cv_rmse_log
+Ridge,GridSearchCV,20 alpha values (log-spaced 1e-3 to 1e3),20 x 5-fold = 100,{'model__alpha': np.float64(1.438449888287663)},0.40696920577342865
+RandomForest,RandomizedSearchCV,540 combinations (n_estimators x max_depth x min_samples_split x min_samples_leaf x max_features),30 sampled x 5-fold = 150,"{'model__n_estimators': 100, 'model__min_samples_split': 10, 'model__min_samples_leaf': 2, 'model__max_features': 'log2', 'model__max_depth': 10}",0.3943559681019761

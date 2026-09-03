@@ -1,0 +1,2 @@
+NUMERIC:reviews,overall_satisfaction,has_satisfaction,has_reviews,accommodates,bathrooms,bedrooms,address_length
+CATEGORICAL:room_type

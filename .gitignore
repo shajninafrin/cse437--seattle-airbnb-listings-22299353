@@ -1,0 +1,17 @@
+# OS / editor
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Environments
+.venv/
+venv/
+env/
+
+# Large raw data (only if over 50MB - otherwise keep committed per assignment rules)
+# Uncomment the line below only if your raw file is too large to commit:
+# data/raw/*.csv
+
+# Keep processed data and models committed - reviewers need to run notebooks without
+# re-downloading; do not ignore data/processed/ or models/
